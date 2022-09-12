@@ -1,11 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import {Nav, NavLink, NavMenu}
+from "./components/NavbarElements";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const Navbar = () => {
+  return (
+    <>
+    <Nav>
+      <NavMenu>
+        <NavLink to="/about" activeStyle>
+          About
+        </NavLink>
+        <NavLink to="/contact"activeStyle>
+        </NavLink>
+      </NavMenu>
+    </Nav>
+    </>
+  );
+};
+
+export default Navbar;
+

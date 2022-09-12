@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route}
-from 'react-router-dom'
-import Layout from './layout/Layout'
-import Home from './components/pages/Home'
-import AboutUs from '.components/pages/AboutUs'
-import ContactUs from '/.components/pages/ContactUs'
+from 'react-router-dom';
+import Layout from './layout/Layout';
+import Home from './components/pages/Home';
+import AboutUs from '.components/pages/AboutUs';
+import ContactUs from '/.components/pages/ContactUs';
 
 
 
