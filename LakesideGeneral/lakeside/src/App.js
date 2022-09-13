@@ -1,28 +1,20 @@
 import React from 'react';
-import './App.css';
-import {BrowserRouter as Router, Routes, Route}
-from 'react-router-dom';
-import Layout from './layout/Layout';
-import Home from './components/pages/Home';
-import AboutUs from '.components/pages/AboutUs';
-import ContactUs from '/.components/pages/ContactUs';
+import {makeStyles} from '@material-ui/core/styles';
+
+const useStyles = makeStyles(() => ({
+  root: {
+    minHeight: "100vh",
+    backgroundImage: `url({${process.env.PUBLIC_URL + '/img/LGfront.png'})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover';
+  },
+}));
 
 
-
-function App() {
-  return (
-    <div>
-      <Router>
-        <Layout>
-          <Switch>
-            <Route path={'/AboutUs'} component={AboutUs}></Route>
-            <Route path={'/ContactUs'} component={ContactUs}></Route>
-            <Route path={'/'} component={Home}></Route>
-          </Switch>
-        </Layout>
-      </Router>
-    </div>
-  );
+export default function () {
+  const classes = useStyles();
+  return
+    <div className={classes.root}>
+      <CssBaseline />
+    </div>;
 }
-
-export default App;
