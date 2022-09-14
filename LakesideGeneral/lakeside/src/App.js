@@ -1,20 +1,16 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles';
-
-const useStyles = makeStyles(() => ({
-  root: {
-    minHeight: "100vh",
-    backgroundImage: `url({${process.env.PUBLIC_URL + '/img/LGfront.png'})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover';
-  },
-}));
+import AboutUs from './components/pages/AboutUs';
+import ContactUs from './components/pages/ContactUs';
+import Home from './components/pages/Home';
 
 
-export default function () {
-  const classes = useStyles();
-  return
-    <div className={classes.root}>
-      <CssBaseline />
-    </div>;
+export default function App(){
+  return(
+    <main className='text-gray-400 bg-gray-900 body-font'>
+      <Navbar />
+      <AboutUs />
+      <ContactUs />
+      <Home />
+    </main>
+  );
 }
