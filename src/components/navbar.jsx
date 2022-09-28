@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from '../assets/LGfront.jpeg'
+import {FaBars, Fatimes} from 'react-icons/fa';
 
 const Navbar = () => {
     return(
@@ -8,7 +9,7 @@ const Navbar = () => {
                 <img src={Image} alt="lakeside" />
 
                 {/*Menu is here*/}
-                <ul>
+                <ul className="flex">
                     <li>Home</li>
                     <li>About</li>
                     <li>Products</li>
@@ -17,8 +18,8 @@ const Navbar = () => {
             </div>
 
             {/*Hamburger*/}
-            <div>
-                
+            <div className = 'hidden'>
+                <FaBars />
             </div>
 
 
