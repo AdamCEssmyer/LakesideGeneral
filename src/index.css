@@ -10,5 +10,6 @@
     }
     li {
         @apply font-[Roboto];
+        @apply cursor-pointer;
     }
 }
