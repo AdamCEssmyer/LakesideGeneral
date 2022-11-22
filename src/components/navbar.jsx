@@ -4,10 +4,7 @@ import {FaBars, Fatimes} from 'react-icons/fa';
 
 const Navbar = () => {
     return(
-        <div className='fixed w-full h-[80px] flex: justify-between items-center px-4 bg-black text-gray-100' >
-            <div>
-                <img src={Image} alt="lakeside" style={{width: '50px'}} />
-            </div>
+        <div className='fixed w-full h-[60px] flex: justify-between items-center px-60 bg-black text-gray-100' >
                 <div>
                      {/*Menu is here*/}
                     <ul className='flex'>
