@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from '../assets/LGfront.jpeg'
 import {FaBars, Fatimes} from 'react-icons/fa';
 
 const Navbar = () => {
