@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@layer base{
+    body{
+        @apply font-[Roboto];
+    }
+    li {
+        @apply font-[Roboto];
+        @apply cursor-pointer;
+        font-size: 25px;
+        display: inline;
+        padding: 10px 60px;
+        text-align: center;
+    }
+}
+
+h1{
+    text-align: center;
+}
+
+
+
